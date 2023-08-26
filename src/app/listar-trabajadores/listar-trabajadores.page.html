@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Listar trabajadores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <h1 class="ion-padding">{{ titulo }}</h1>
+  <ion-button routerLink="/crear-trabajadores" expand="block">Crear trabajador</ion-button>
+  <ion-card *ngFor="let trabajador of trabajadores">
+    <ion-card-content>
+      Nombre: {{trabajador.nombre}}
+    </ion-card-content>
+    </ion-card>
+
+  <!-- 
+  <ion-card *ngFor="let trabajador of trabajadores">
+  <ion-card-content>
+    Nombre: {{trabajador.nombre}}
+  </ion-card-content>
+  </ion-card>
+
+
+
+   -->
+</ion-content>

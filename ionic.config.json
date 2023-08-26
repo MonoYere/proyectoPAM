@@ -1,0 +1,7 @@
+{
+  "name": "instproy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

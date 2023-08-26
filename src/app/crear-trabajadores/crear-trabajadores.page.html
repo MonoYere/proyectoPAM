@@ -10,7 +10,21 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">crear-trabajadores</ion-title>
+      <ion-title size="large">Crear trabajador</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <form [formGroup]="formTrabajador">
+  <ion-input label="Nombre" label-placement="floating" fill="outline"
+  placeholder="Ingrese nombre..." class="ion-padding"></ion-input>
+  <ion-input label="Apellido" label-placement="floating" fill="outline"
+  placeholder="Ingrese apellido..." class="ion-padding"></ion-input>
+  <ion-input label="Edad" label-placement="floating" fill="outline"
+  placeholder="Ingrese edad..." class="ion-padding"></ion-input>
+  <ion-input label="Profesion" label-placement="floating" fill="outline"
+  placeholder="Ingrese profesión..." class="ion-padding"></ion-input>
+  <br>
+  <ion-button expand="block" class="ion-padding">Grabar Trabajador</ion-button>
+  </form>
+  
 </ion-content>
